@@ -1,0 +1,158 @@
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            body {
+                width: 100%;
+                height: 100vh;
+                background: #e9d6cd;
+            }
+            
+            #img img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 20%;
+                animation: 1s animate ease-in-out;
+                margin-bottom: 100px;
+            }
+            
+            @keyframes animate {
+                0% {
+                    opacity: 0;
+                    transform: scale(.5);
+                }
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            
+            ul li {
+                padding: 20px;
+                font-size: 20px;
+            }
+            
+            hr {
+                border: 2px solid green;
+                border-radius: 5px;
+                width: 10%;
+                margin-bottom: 50px;
+            }
+            /* cart */
+            
+            #cart-container table {
+                border-collapse: collapse;
+                width: 100%;
+                table-layout: fixed;
+            }
+            
+            #cart-container table thead {
+                font-weight: 700;
+            }
+            
+            #cart-container table thead td {
+                background-color: olivedrab;
+                color: white;
+                border: none;
+                padding: 6px;
+            }
+            
+            #cart-container table td {
+                border: 1px solid #b6b3b3;
+                text-align: center;
+            }
+            
+            #cart-container table td:nth-child(1) {
+                width: 100px;
+            }
+            
+            #cart-container table td:nth-child(2),
+            #cart-container table td:nth-child(3) {
+                width: 200px;
+            }
+            
+            #cart-container table td:nth-child(4),
+            #cart-container table td:nth-child(5),
+            #cart-container table td:nth-child(6) {
+                width: 170px;
+            }
+            
+            #cart-container table tbody img {
+                width: 100px;
+                height: 70px;
+                object-fit: contain;
+            }
+            /* pop-up */
+            
+            .pop-up {
+                background: rgba(0, 0, 0, 0.6);
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .popup-content {
+                height: 550px;
+                width: 600px;
+                background: #fff;
+                padding: 20px;
+                border-radius: 40px;
+                position: relative;
+            }
+            
+            .pizza-pic {
+                width: 20%;
+            }
+            
+            input {
+                display: block;
+                margin: 20px auto;
+                width: 60%;
+                padding: 8px;
+                border: 2px solid green;
+            }
+            
+            h3 {
+                margin: 30px;
+            }
+            
+            .close {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                background: greenyellow;
+                height: 20px;
+                width: 20px;
+                border-radius: 60%;
+                box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+                cursor: pointer;
+            }
+            /* #hover-submit:hover {
+                background-color: green;
+                color: white;
+            } */
+            
+            .pd {
+                padding: 10px 50px;
+            }
+            
+            .nav-logo {
+                width: 50%;
+            }
+            
+            .navbar-custom {
+                height: 100px;
+            }
+            
+            .container-pizza {
+                display: flex;
+            }

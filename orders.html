@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orders</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9eeca5785c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+        <a class="navbar-brand" href="#"><img src="/pizza-logo.png" alt="" class="nav-logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggxler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+                <li class="nav-item ">
+
+                    <button class=" btn btn-outline-success " id="login_button" type="button">ADD PIZZA</button>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">My Pizza</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href=index.html>Log out  <i class='fas fa-user-cog' style='color:red'></i></a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- pop-up -->
+    <div class="pop-up">
+        <div class="popup-content">
+            <img src="/clos.png" alt="" class="close">
+            <img src="/png-clipart-california-style-pizza-sicilian-pizza-chrono-pizza-fast-food-pizza-menu-food-recipe-removebg-preview.png" class="pizza-pic" alt="">
+            <h3><strong>Customise Your Pizza!</strong> </h3>
+
+            <form id="form-2" method="post">
+                <input type="number" id="Table_No" placeholder="Table Number">
+                <input type="text" id="Size" placeholder="Size">
+                <input type="text" id="Flavor" placeholder="Flavor">
+                <input type="text" id="Crust" placeholder="Crust">
+                <button type="submit" class="btn  btn-primary pd">ADD</button>
+                <!-- <input type="submit" value="Add Pizza" id="hover-submit"> -->
+
+
+            </form>
+        </div>
+    </div>
+
+    <!-- table -->
+    <section id="my-pizza" class="pt-4 mt-4 container">
+        <h2 class="pt-4">My Orders</h2>
+        <hr>
+    </section>
+
+    <section id="cart-container" class="container my-5 ">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Pizza</td>
+                    <td>Size</td>
+                    <td>Flavor</td>
+                    <td>Crust</td>
+                    <td>Cancel</td>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+            </tbody>
+        </table>
+    </section>
+
+
+    <!-- test -->
+    <section id="my-pizza" class="pt-4 mt-4 container">
+        <h2 class="pt-4">Best Combo Offer</h2>
+        <hr>
+    </section>
+    <section id="cart-container" class="container my-5 ">
+        <div class="row grid">
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                <div class="our-project">
+                    <div class="img">
+                        <a class="test-popup-link">
+                            <img src="/offer-1.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4">
+                        <h4 class="text-uppercase">Magic Pizza Box</h4>
+                        <span class="text-secondary">₹599</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                <div class="our-project">
+                    <div class="img">
+                        <a class="test-popup-link">
+                            <img src="/offer-3.jpeg " class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4">
+                        <h4 class="text-uppercase">Super Saver Meal Combo</h4>
+                        <span class="text-secondary">₹599</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 element-item popular">
+                <div class="our-project">
+                    <div class="img">
+                        <a class="test-popup-link">
+                            <img src="/offer-2.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="title py-4">
+                        <h4 class="text-uppercase">San Francisco Style</h4>
+                        <span class="text-secondary">₹749</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
+    <!-- footer-->
+
+    <footer class="text-center text-white ">
+
+        <!-- Grid container -->
+        <div class="container p-4 "></div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 " style="background-color:#6B8E25; ">
+            © 2022 Copyright:
+            <a class="text-white " href="https://mdbootstrap.com/ ">PizzaTown.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="index.js "></script>
+    <script src="popup.js "></script>
+
+
+</body>
+
+</html>
