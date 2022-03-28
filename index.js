@@ -33,7 +33,7 @@ fetch("https://61b6012ac95dd70017d40dcd.mockapi.io/api/V1/Pizza ").then((data) =
         <td>
             <h5>${values.id}</h5>
         </td>
-        <td><img src="/png-clipart-pizza-pizza-removebg-preview.png" alt="pizza"></td>
+        <td><img src="./png-clipart-pizza-pizza-removebg-preview.png" alt="pizza"></td>
         <td>
             <h5>${values.Size}</h5>
         </td>
